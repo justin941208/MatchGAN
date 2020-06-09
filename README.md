@@ -35,7 +35,7 @@ $ bash download_celeba.sh
 ```
 In addition, the partition file `list_eval_partition.txt` should be downloaded from the [official CelebA google drive](https://drive.google.com/file/d/0B7EVK8r0v71pY0NSMzRuSXJEVkk/view?usp=sharing) and placed immediately under the directory `./data/celeba/`.
 
-To download the RaFD dataset, you must request access to the dataset from [the Radboud Faces Database website](http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main). Then, you need to create subdirectories `./data/RaFD/data` and place all the image files there. To preprocess the dataset, run the following command:
+To download the RaFD dataset, one must request access to the dataset from [the Radboud Faces Database website](http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main). Once all the image files are obtained, they need to be placed under the subdirectory `./data/RaFD/data`. To preprocess the dataset, run the following command:
 ```bash
 $ python preprocess_rafd.py
 ```
@@ -58,6 +58,8 @@ To test MatchGAN following the above example on CelebA, run the command
 ```bash
 $ ./run celeba test 5 0
 ```
+This will generate synthetic images from the test set and save them to the directory `./matchgan_celeba/results`.
+
 To evaluate the model using Frechet Inception Distance (FID), Inception Score (IS), and GAN-test, run the following command:
 ```bash
 $ ./run celeba eval 5 0
