@@ -1,0 +1,33 @@
+#!/bin/bash
+
+dataset=$1 # celeba or rafd
+mode=$2 # Can be any of train, test, eval, synth, synth_test
+labelled_percentage=$3 # Percentage of training data to be set as labelled.
+device=$4 # Select which GPU to use.
+
+if [ $dataset == "celeba" ]; then
+
+    # Run CelebA
+    python main.py --mode $mode --dataset CelebA --image_size 128 --c_dim 5 \
+                   --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young \
+                   --model_save_dir matchgan_celeba/models \
+                   --result_dir matchgan_celeba/results \
+                   --log_dir matchgan_celeba/results/logs \
+                   --attr_path ./data/celeba/list_attr_celeba_${labelled_percentage}pc.txt \
+                   --labelled_percentage $labelled_percentage \
+                   --device $device
+
+elif [ $dataset == "rafd" ]; then
+
+    # Run RaFD
+    python main.py --mode $mode --dataset RaFD --image_size 128 --c_dim 8 \
+                   --model_save_dir matchgan_rafd/models \
+                   --result_dir matchgan_rafd/results \
+                   --log_dir matchgan_rafd/results/logs \
+                   --labelled_percentage $labelled_percentage \
+                   --device $device
+
+else
+    echo "Available arguments are celeba, rafd."
+    exit 1
+fi
