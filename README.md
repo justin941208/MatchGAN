@@ -3,6 +3,8 @@ This repository is the official implementation of "MatchGAN: A Self-supervised S
 
 ![alt text](https://github.com/justin941208/MatchGAN/blob/master/images/qualitative.png?raw=true)
 
+This repository is built upon the framework of [StarGAN](https://github.com/yunjey/stargan).
+
 ## 1. Cloning the repository
 Clone the repository and navigate to it.
 ```bash
