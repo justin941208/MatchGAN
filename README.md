@@ -1,6 +1,8 @@
 # MatchGAN: A Self-supervised Semi-supervised Conditional Generative Adversarial Network
 This repository is the official implementation of "MatchGAN: A Self-supervised Semi-supervised Conditional Generative Adversarial Network".
 
+![alt text](https://github.com/justin941208/MatchGAN/blob/master/images/qualitative.png?raw=true)
+
 ## 1. Cloning the repository
 Clone the repository and navigate to it.
 ```bash
