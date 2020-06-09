@@ -31,7 +31,7 @@ To evaluate MatchGAN using GAN-train and GAN-test, the following files should be
 ## 2. Downloading the datasets
 To download the CelebA dataset:
 ```bash
-$ bash download_celeba.sh
+$ bash download.sh
 ```
 In addition, the partition file `list_eval_partition.txt` should be downloaded from the [official CelebA google drive](https://drive.google.com/file/d/0B7EVK8r0v71pY0NSMzRuSXJEVkk/view?usp=sharing) and placed immediately under the directory `./data/celeba/`.
 
