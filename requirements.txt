@@ -2,5 +2,5 @@ numpy==1.17.2
 numpydoc==0.9.1
 opencv-python==4.2.0.34
 pathlib2==2.3.5
-Pillow==7.1.0
+Pillow==8.1.1
 tensorboard==1.14.0
