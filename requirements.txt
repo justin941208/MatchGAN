@@ -1,4 +1,4 @@
-numpy==1.17.2
+numpy==1.22.0
 numpydoc==0.9.1
 opencv-python==4.2.0.34
 pathlib2==2.3.5
