@@ -35,7 +35,7 @@ $ bash download.sh
 ```
 In addition, the partition file `list_eval_partition.txt` should be downloaded from the [official CelebA google drive](https://drive.google.com/file/d/0B7EVK8r0v71pY0NSMzRuSXJEVkk/view?usp=sharing) and placed immediately under the directory `./data/celeba/`.
 
-To download the RaFD dataset, one must request access to the dataset from [the Radboud Faces Database website](http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main). Once all the image files are obtained, they need to be placed under the subdirectory `./data/RaFD/data`. To preprocess the dataset, run the following command:
+To download the RaFD dataset, one must request access to the dataset from [the Radboud Faces Database website](https://rafd.socsci.ru.nl/RaFD2/RaFD?p=main). Once all the image files are obtained, they need to be placed under the subdirectory `./data/RaFD/data`. To preprocess the dataset, run the following command:
 ```bash
 $ python preprocess_rafd.py
 ```
